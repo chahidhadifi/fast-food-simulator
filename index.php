@@ -1,3 +1,11 @@
+<?php
+if ($_POST && $_POST["table"] != null) {
+    session_start();
+    $_SESSION["name"] = $_POST["name"];
+    $_SESSION["table"] = $_POST["table"];
+    header("location: hamburger_simulator.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
