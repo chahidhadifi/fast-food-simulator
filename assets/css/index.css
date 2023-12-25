@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Poppins;
+  font-family: Consolas;
 }
 
 body {
@@ -46,7 +46,7 @@ input[type="submit"] {
 }
 
 input[name="table"] {
-  width: 167px;
+  width: 155px;
 }
 
 input[type="submit"]:hover {

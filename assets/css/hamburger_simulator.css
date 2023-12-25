@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Consolas;
+  font-weight: 600;
+  color: #1e2022;
+}
+
+body {
+  background-color: #f0f5f9;
+}
+
+button {
+  border: 2px solid #1e2022;
+  background-color: #f0f5f9;
+  color: #1e2022;
+  padding: 9px 13px;
+  font-size: 20px;
+}
+
+h1 {
+  margin-bottom: 60px;
+  margin-top: -100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title {
+  position: fixed;
+  top: 0;
+  margin-top: 160px;
+  text-align: center;
+}
+
+.simulation-burger {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.burger {
+  width: 400px;
+}
+
+.burger .top-bun {
+  height: 100px;
+  border-radius: 900px 900px 10px 10px;
+  background: linear-gradient(#bc581e, #e27b36);
+  border-top: 9px solid #bc581e;
+}
+
+.burger .lettuce {
+  border-radius: 8px;
+  background-color: #7bcb3d;
+  height: 8px;
+  border-bottom: 3px solid #0e6811;
+}
+
+.burger .tomato {
+  border-radius: 14px;
+  background-color: #e43232;
+  height: 20px;
+  border-bottom: 5px solid #8f0c0e;
+}
