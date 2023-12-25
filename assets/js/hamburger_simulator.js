@@ -45,3 +45,76 @@ remove_tomato.addEventListener("click", (event) => {
     number_tomato.value = input_number_tomato;
   }
 });
+
+//Onion
+const add_onion = document.querySelector(".add-onion");
+const remove_onion = document.querySelector(".remove-onion");
+const number_onion = document.getElementById("number-onion");
+let input_number_onion = 1;
+add_onion.addEventListener("click", (event) => {
+  event.preventDefault();
+  const onion_item = document.querySelector(".onion");
+  if (input_number_onion < 3) {
+    onion_item.insertAdjacentHTML("afterend", `<div class="onion"></div>`);
+    input_number_onion++;
+    number_onion.value = input_number_onion;
+  }
+});
+remove_onion.addEventListener("click", (event) => {
+  event.preventDefault();
+  const onion_item = document.getElementsByClassName("onion");
+  if (onion_item.length > 1) {
+    onion_item[0].remove();
+    input_number_onion--;
+    number_onion.value = input_number_onion;
+  }
+});
+
+//Cheese
+const add_cheese = document.querySelector(".add-cheese");
+const remove_cheese = document.querySelector(".remove-cheese");
+const number_cheese = document.getElementById("number-cheese");
+let input_number_cheese = 1;
+add_cheese.addEventListener("click", (event) => {
+  event.preventDefault();
+  const cheese_item = document.querySelector(".cheese");
+  if (input_number_cheese < 3) {
+    cheese_item.insertAdjacentHTML("afterend", `<div class="cheese"></div>`);
+    input_number_cheese++;
+    number_cheese.value = input_number_cheese;
+  }
+});
+remove_cheese.addEventListener("click", (event) => {
+  event.preventDefault();
+  const cheese_item = document.getElementsByClassName("cheese");
+  if (cheese_item.length > 1) {
+    cheese_item[0].remove();
+    input_number_cheese--;
+    number_cheese.value = input_number_cheese;
+  }
+});
+
+//Beef
+
+const add_beef = document.querySelector(".add-beef");
+const remove_beef = document.querySelector(".remove-beef");
+const number_beef = document.getElementById("number-beef");
+let input_number_beef = 1;
+add_beef.addEventListener("click", (event) => {
+  event.preventDefault();
+  const beef_item = document.querySelector(".beef");
+  if (input_number_beef < 3) {
+    beef_item.insertAdjacentHTML("afterend", `<div class="beef"></div>`);
+    input_number_beef++;
+    number_beef.value = input_number_beef;
+  }
+});
+remove_beef.addEventListener("click", (event) => {
+  event.preventDefault();
+  const beef_item = document.getElementsByClassName("beef");
+  if (beef_item.length > 1) {
+    beef_item[0].remove();
+    input_number_beef--;
+    number_beef.value = input_number_beef;
+  }
+});
