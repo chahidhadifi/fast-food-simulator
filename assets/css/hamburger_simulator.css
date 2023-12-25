@@ -71,3 +71,125 @@ h1 {
   height: 20px;
   border-bottom: 5px solid #8f0c0e;
 }
+
+.burger .onion {
+  border-radius: 8px;
+  background-color: #b6527f;
+  height: 13px;
+  border-bottom: 4px solid #7a1643;
+}
+
+.burger .cheese {
+  background-color: #e5e900;
+  border-radius: 10px;
+  height: 15px;
+  border-bottom: 5px solid #eab902;
+}
+
+.burger .beef {
+  border-radius: 15px;
+  background-color: #5e3002;
+  height: 30px;
+  border-bottom: 16px solid #3c2208;
+}
+
+.burger .bottom-bun {
+  background: linear-gradient(#e27b36, #bc581e);
+  border-radius: 10px 10px 50px 50px;
+  height: 60px;
+  border-bottom: 11px solid #bc581e;
+}
+
+.options-burger {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-burger {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+input[type="submit"] {
+  width: 90px;
+  margin-bottom: 9px;
+  padding: 10px;
+  border: solid 2px black;
+  background-color: transparent;
+}
+
+input[type="submit"]:hover {
+  background-color: black;
+  color: white;
+}
+
+.sub-title {
+  margin-top: -20px;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.number-lettuce {
+  display: none;
+  visibility: hidden;
+}
+
+.back-to-home {
+  position: fixed;
+  top: 0;
+  padding: 14px;
+}
+
+a[href="index.php"] {
+  color: black;
+  text-decoration: none;
+}
+
+a[href="index.php"]:hover {
+  text-decoration: underline;
+}
