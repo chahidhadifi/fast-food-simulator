@@ -4,18 +4,30 @@
   font-family: Consolas;
   font-weight: 600;
   color: #1e2022;
+  user-select: none;
 }
 
 body {
-  background-color: #f0f5f9;
+  background: #000 center/cover url("../img/background.jpg") no-repeat;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
   border: 2px solid #1e2022;
-  background-color: #f0f5f9;
+  background-color: transparent;
   color: #1e2022;
   padding: 9px 13px;
   font-size: 20px;
+}
+
+button:hover {
+  color: white;
+  background-color: #000;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 h1 {
@@ -29,6 +41,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  width: 58%;
 }
 
 .title {
@@ -39,12 +52,20 @@ h1 {
 }
 
 .simulation-burger {
-  width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 20%;
+}
+
+.image-burger {
+  margin-left: 90px;
+  transition: all 0.2s ease-in-out;
+}
+
+.image-burger:hover {
+  transform: scale(1.1);
 }
 
 .burger {
@@ -160,6 +181,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: black;
   color: white;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .sub-title {
@@ -182,6 +205,7 @@ input[type="submit"]:hover {
 .back-to-home {
   position: fixed;
   top: 0;
+  left: 0;
   padding: 14px;
 }
 

@@ -19,7 +19,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f0f5f9;
+  background: #000 center/cover url("../img/background.jpg") no-repeat;
 }
 
 h1 {
@@ -52,4 +52,6 @@ input[name="table"] {
 input[type="submit"]:hover {
   background-color: black;
   color: white;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
