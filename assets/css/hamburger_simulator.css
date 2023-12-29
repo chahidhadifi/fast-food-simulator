@@ -217,3 +217,20 @@ a[href="index.php"] {
 a[href="index.php"]:hover {
   text-decoration: underline;
 }
+
+.price,
+.inner-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container {
+  margin-top: 8px;
+}
+
+#price-value::after {
+  content: "DH";
+  margin-left: 2px;
+}

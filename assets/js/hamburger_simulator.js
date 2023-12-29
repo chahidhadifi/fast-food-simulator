@@ -1,3 +1,7 @@
+let price = document.getElementById("price-value");
+let priceValue = 50;
+price.textContent = priceValue;
+
 //lettuce
 const add_lettuce = document.querySelector(".add-lettuce");
 const remove_lettuce = document.querySelector(".remove-lettuce");
@@ -10,6 +14,8 @@ add_lettuce.addEventListener("click", (event) => {
     lettuce_item.insertAdjacentHTML("afterend", `<div class="lettuce"></div>`);
     input_number_lettuce++;
     number_lettuce.value = input_number_lettuce;
+    priceValue += 10;
+    price.textContent = priceValue;
   }
 });
 remove_lettuce.addEventListener("click", (event) => {
@@ -19,6 +25,8 @@ remove_lettuce.addEventListener("click", (event) => {
     lettuce_item[0].remove();
     input_number_lettuce--;
     number_lettuce.value = input_number_lettuce;
+    priceValue -= 10;
+    price.textContent = priceValue;
   }
 });
 
@@ -34,6 +42,8 @@ add_tomato.addEventListener("click", (event) => {
     tomato_item.insertAdjacentHTML("afterend", `<div class="tomato"></div>`);
     input_number_tomato++;
     number_tomato.value = input_number_tomato;
+    priceValue += 10;
+    price.textContent = priceValue;
   }
 });
 remove_tomato.addEventListener("click", (event) => {
@@ -43,6 +53,8 @@ remove_tomato.addEventListener("click", (event) => {
     tomato_item[0].remove();
     input_number_tomato--;
     number_tomato.value = input_number_tomato;
+    priceValue -= 10;
+    price.textContent = priceValue;
   }
 });
 
@@ -58,6 +70,8 @@ add_onion.addEventListener("click", (event) => {
     onion_item.insertAdjacentHTML("afterend", `<div class="onion"></div>`);
     input_number_onion++;
     number_onion.value = input_number_onion;
+    priceValue += 10;
+    price.textContent = priceValue;
   }
 });
 remove_onion.addEventListener("click", (event) => {
@@ -67,6 +81,8 @@ remove_onion.addEventListener("click", (event) => {
     onion_item[0].remove();
     input_number_onion--;
     number_onion.value = input_number_onion;
+    priceValue -= 10;
+    price.textContent = priceValue;
   }
 });
 
@@ -82,6 +98,8 @@ add_cheese.addEventListener("click", (event) => {
     cheese_item.insertAdjacentHTML("afterend", `<div class="cheese"></div>`);
     input_number_cheese++;
     number_cheese.value = input_number_cheese;
+    priceValue += 10;
+    price.textContent = priceValue;
   }
 });
 remove_cheese.addEventListener("click", (event) => {
@@ -91,11 +109,12 @@ remove_cheese.addEventListener("click", (event) => {
     cheese_item[0].remove();
     input_number_cheese--;
     number_cheese.value = input_number_cheese;
+    priceValue -= 10;
+    price.textContent = priceValue;
   }
 });
 
 //Beef
-
 const add_beef = document.querySelector(".add-beef");
 const remove_beef = document.querySelector(".remove-beef");
 const number_beef = document.getElementById("number-beef");
@@ -107,6 +126,8 @@ add_beef.addEventListener("click", (event) => {
     beef_item.insertAdjacentHTML("afterend", `<div class="beef"></div>`);
     input_number_beef++;
     number_beef.value = input_number_beef;
+    priceValue += 10;
+    price.textContent = priceValue;
   }
 });
 remove_beef.addEventListener("click", (event) => {
@@ -116,5 +137,7 @@ remove_beef.addEventListener("click", (event) => {
     beef_item[0].remove();
     input_number_beef--;
     number_beef.value = input_number_beef;
+    priceValue -= 10;
+    price.textContent = priceValue;
   }
 });

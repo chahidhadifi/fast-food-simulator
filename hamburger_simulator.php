@@ -93,6 +93,15 @@ if ($_POST) {
                 </div>
             </div>
             </div>
+            <div class="price-container">
+                <div class="price">
+                    <div>Price</div>
+                    <div class="inner-price">
+                        <div id="price-value"></div>
+                        
+                    </div>
+                </div>
+            </div>
             <div class="submit">
                 <input type="submit" value="Submit">
             </div>
